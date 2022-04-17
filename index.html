@@ -8,23 +8,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4488541cbe.js" crossorigin="anonymous"></script>
         <title>PAGINA PRINCIPAL</title>
     </head>
-    <body>
+    <body class="grid__principal">
         <header>
-            <div class="topEstructure">
+            <div class="header__top">
                 <div class="logo">
-                    <a href="./index.html"><img src="./assets/img/logo(389x294).png" alt="LOGO"></a>
-                </div>
-                <div class="searchBar">
-                    <input type="text" id="buscador" placeholder="Buscador">
-                </div>
-                <div class="UI">
-                    <ul>
-                        <li class="UI__btn"><a href="#">PERFIL</a></li>
-                        <li class="UI__btn"><a href="#">CARRITO</a></li>
-                    </ul>
-                </div>
+                    <a href="./index.html"><img src="./assets/img/logo-mobile-transparente.png" alt="logo-mobile"></a>
+                </div>  
+                <input class="header__btn--buscador" type="button" value="B">
+                <input class="header__btn--carrito" type="button" value="C">
             </div>
             <nav class="nav">
                 <ul>
@@ -37,30 +31,67 @@
             </nav>
         </header>
 
-        <main>
-            <h2>INICIO</h2>
-            <div class="wrapper">
+        <main>   
+            <div class="main__container">
+                <h2>INICIO</h2>
                 <!--ANUNCIOS / PRODUCTOS MAS VENDIDOS / OFERTAS-->
-                <div class="principal">
-                    <img src="./assets/img/principal.png" rel="ANUNCIO">
+                <div class="main__img">
+                    <img src="./assets/img/main-logo.png" alt="logo-principal">
                 </div>
-                <!--FALTA AGREGAR:-->
-                <!--FORMAS DE PAGO / INFO-->
+                <!--FORMAS DE PAGO-->
+                <div class="main__info">
+                    <h4>ABONA COMO QUIERAS</h4>
+                    <h4>TRANSFERENCIA BANCARIA</h4><i class="fa-solid fa-building-columns"></i>
+                    <h4>TARJETAS DE CREDITO</h4><i class="fa-solid fa-credit-card"></i>
+                    <h4>MERCADO PAGO</h4><i class="fa-solid fa-mobile-screen"></i>
+                </div>
                 <!--PAQUETES DE PRODUCTOS-->
+                <div class="main__card">
+                    <h4>COMBOS ACCECIBLES</h4>
+                    <div class="main__card--container">
+                        <div class="main__card--img">
+                            <img src="/assets/img/packdental.png" alt="packdental">
+                            <div class="main__card--text">
+                                <h5>HIGIENE BUCAL</h5>
+                                <h6>PASTA DENTAL</h6>
+                                <h6>HILO DENTAL</h6>
+                                <h6>CEPILLO DE BAMBU</h6>            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__card--container">
+                        <div class="main__card--img">
+                            <img src="/assets/img/packcabello.png" alt="packcabello">
+                            <div class="main__card--text">
+                                <h5>HIGIENE CAPILAR</h5>
+                                <h6>SHAMPOO SOLIDO</h6>
+                                <h6>ACONDICIONADOR SOLIDO</h6>
+                                <h6>SOPORTE DE BAMBU</h6>         
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__card--container">
+                        <div class="main__card--img">
+                            <img src="/assets/img/packcocina.png" alt="packdental">
+                            <div class="main__card--text">
+                                <h5>ELEMENTOS DE COCINA</h5>
+                                <h6>DETERGENTE SOLIDO</h6>
+                                <h6>ESPONJA VEGETAL</h6>
+                                <h6>SOPORTE DE BAMBU</h6>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
-
         <footer>
-            <div class="socialMedia">
-                <h5>Buscanos en nuestras redes sociales</h5>
+            <div class="footer__rrss">
+                <h6>NUESTRAS REDES SOCIALES</h6>
                 <ul>
-                    <li class="socialMedia__link"><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./assets/img/Instragam_logo.png" alt="InstagramLogo"></a></li>
-                    <li class="socialMedia__link"><a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/Facebook_logo.png" alt="FacebookLogo"></a></li>
+                    <li class="socialMedia__link"><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a></li>
+                    <li class="socialMedia__link"><a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a></li>
                 </ul>
             </div>
-            <!--FALTA AGREGAR:-->
-            <!--OPCIONES-->
-            <!--NEWSLETTER-->
         </footer>
     </body>
 </html>
