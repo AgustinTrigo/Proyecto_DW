@@ -117,7 +117,7 @@ main{
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
-
+    width: 100%;
 }
 
 .main__img{
@@ -282,16 +282,69 @@ main{
 
 /* --- MAIN: COMO AYUDAR --- */
 
-h3{
+.titulos{
+    position: relative;
+    right: 350px;
+    width: 300px;
+    height: 40px;
+    padding-top: 10px;
+    color: white;
     text-align: center;
-    font-size: 1em;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: var(--color2);
+    margin-left: 10px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, var(--color2), var(--color6));
+    animation-name: animTitulos;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
-.shadowOff{
-    box-shadow: none;
+.card__container{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.img1{
+    opacity: 1;
+    border: solid 1px red;
+    border-radius: 5px;
+}
+
+.img2{
+    opacity: 0;
+    border: solid 2px var(--color6);
+    border-radius: 5px;
+}
+
+.card__container:hover .img1{
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.card__container:hover .img2{
+    opacity: 1;
+}
+
+
+@keyframes animTitulos {
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(350px,0px);
+    }
 }
 
 
@@ -391,6 +444,7 @@ footer{
     header{
         position: sticky;
         top: 0;
+        z-index: 100;
     }
 
     .header__top{
@@ -469,6 +523,14 @@ footer{
         max-width: 80%;
     }
 
+    .main__container{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .card__container{
+        margin: 15px;
+    }
 
 }
 
