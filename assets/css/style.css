@@ -9,7 +9,7 @@
     --color1: #15434B;
     --color2: #46A5A5;
     --color3: #8CDECC;
-    --color4: #DAEEEF;
+    --color4: #b3f1ce;
     --color5: #EEF2E4;
     --color6: #A3D371;
     --color7: #10753B;
@@ -21,34 +21,20 @@ body{
     min-height: 100vh;
 }
 
-.grid__principal{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content auto 150px;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
+.bg__color{
+    background-image:linear-gradient(to bottom, var(--color5), var(--color4)) ;
 }
-
 
 h2{
     text-align: center;
     font-size: 1.2em;
+    margin-top: 30px;
     padding-bottom: 15px;
     color: #46A5A5;
     text-decoration-line: overline;
 }
 
 /* --- HEADER --- */
-
-header{
-    grid-area: header;
-    width: 100%;
-    max-height: max-content;
-    display: flex;
-    flex-direction: column;
-}
 
 .header__top{
     display: flex;
@@ -107,10 +93,7 @@ a{
 
 /* --- (INDEX) MAIN --- */
 
-main{
-    grid-area: main;
-    width: 100%;
-}
+
 
 .main__container{
     display: flex;
@@ -285,14 +268,13 @@ main{
 .titulos{
     position: relative;
     right: 350px;
-    width: 300px;
+    width: 100%;
     height: 40px;
     padding-top: 10px;
     color: white;
     text-align: center;
-    margin-left: 10px;
     margin-bottom: 30px;
-    background-image: linear-gradient(to right, var(--color2), var(--color6));
+    background-color: var(--color2);
     animation-name: animTitulos;
     animation-duration: 2s;
     animation-fill-mode: forwards;
