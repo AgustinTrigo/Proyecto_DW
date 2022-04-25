@@ -34,6 +34,10 @@ h2{
     text-decoration-line: overline;
 }
 
+.img__box{
+    height: 300px;
+}
+
 /* --- HEADER --- */
 
 .header__top{
@@ -364,13 +368,21 @@ a{
 form label{
     display: block;
     color: white;
-    background-image: linear-gradient(to right, #46A5A5, #56caca);
+    background-image: linear-gradient(to right, var(--color2), var(--color4));
     margin-bottom: 5px;
     font-weight: 600;
+    border-radius: 5px;
+    padding: 2px 2px 2px 5px;
 }
 
 .form__inputs{
     margin-bottom: 30px;
+    display: block;
+    color: white;
+    background-image: linear-gradient(to right, var(--color2), var(--color4));
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 2px 2px 2px 5px;
 }
 
 .form__inputs input{
