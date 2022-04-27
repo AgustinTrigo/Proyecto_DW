@@ -12,12 +12,14 @@
     --color4: #b3f1ce;
     --color5: #EEF2E4;
     --color6: #A3D371;
-    --color7: #10753B;
+    --color7: #fffaea;
+    --color8: #2893A1;
+    --color9: #abe6c4;
     --solidBorder: solid 1px #000000;
 }
 
 body{
-    font-family: 'roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     min-height: 100vh;
 }
 
@@ -25,65 +27,51 @@ body{
     background-image:linear-gradient(to bottom, var(--color5), var(--color4)) ;
 }
 
+.z-index{
+    z-index: 100;
+}
+
 h2{
     text-align: center;
     font-size: 1.2em;
-    margin-top: 30px;
     padding-bottom: 15px;
-    color: #46A5A5;
-    text-decoration-line: overline;
 }
 
-/* --- HEADER --- */
-
-.header__top{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-image: linear-gradient(to bottom, var(--color5), var(--color4));
-    margin-bottom: 5px;
-}
-
-.logo{
-    height: 50px;
-    padding: 0px 4px 0px 4px;
-    order: 2;
-}   
-
-.logo img{
+.titulos{
+    position: relative;
+    top: -100px;
     width: 100%;
-    height: 100%;
-}
-
-.header__btn--buscador{
-    width: 50px;
-    height: 50px;
-    order: 1;
-}
-
-.header__btn--carrito{
-    width: 50px;
-    height: 50px;
-    order: 3;
-}
-
-.nav{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.nav__item{
-    display: block;
-    margin-bottom: 2px;
+    height: 40px;
+    padding-top: 10px;
     text-align: center;
-    background-color: var(--color2);
-    border: solid 1px black;
-    border-radius: 2px;
-    font-size: 1.1em;
+    color: white;
+    margin-bottom: 30px;
+    background-color: var(--color4);
+    animation-name: animTitulos;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 2;
 }
 
+@keyframes animTitulos {
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(0px,100px);
+    }
+}
+
+
+h4{
+    font-size: 1em;
+    color: white;
+}
+
+.medios__pago{
+    padding: 5px;
+    background-color: var(--color9);
+}
 
 a{
     text-decoration: none;
@@ -91,17 +79,8 @@ a{
     text-decoration: none;
 }
 
-/* --- (INDEX) MAIN --- */
 
-
-
-.main__container{
-    display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-}
+/* (INDEX/MAIN) CARROUCEL */
 
 .main__img{
     width: 100%;
@@ -110,70 +89,12 @@ a{
     justify-content: center;
 }
 
-.main__img img{
-    max-width: 320px;
-}
-
-.main__info{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 30px;
-    border-top: solid 1px var(--color1);
-    border-bottom: solid 1px var(--color1);
-}
-
-.main__info h4{
-    padding: 5px;
-    margin: 5px;
-    border-bottom: dashed 1px var(--color1);
-    color: var(--color2);
-}
-
-.main__info h4:nth-child(1){
-    border-bottom: solid 1px var(--color1);
-}
-
-.main__info h4:nth-child(6){
-    border: none;
-}
-
-.main__info i{
-    padding-top: 11px;
-    color: var(--color2);
-}
+/* (INDEX/MAIN) CARD */
 
 .main__card{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.main__card h4{
-    padding: 5px;
-    margin: 15px 5px 15px 5px;
-    border-bottom: solid 1px var(--color1);
-    color: var(--color2);
-}
-
-.main__card--container{
-    margin-bottom: 20px;
-}
-
-.main__card--img{
-    width: 100%;
+    width: 300px;
     height: 300px;
     position: relative;
-    margin-bottom: 20px;
-    
-    
-}
-
-.main__card--img img{
-    max-width: 320px;
-    
 }
 
 .main__card--text{
@@ -265,20 +186,6 @@ a{
 
 /* --- MAIN: COMO AYUDAR --- */
 
-.titulos{
-    position: relative;
-    right: 350px;
-    width: 100%;
-    height: 40px;
-    padding-top: 10px;
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-    background-color: var(--color2);
-    animation-name: animTitulos;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
 
 .card__container{
     width: 300px;
@@ -320,14 +227,7 @@ a{
 }
 
 
-@keyframes animTitulos {
-    0%{
-        transform: translate(0px,0px);
-    }
-    100%{
-        transform: translate(350px,0px);
-    }
-}
+
 
 
 
