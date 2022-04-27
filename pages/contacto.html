@@ -15,13 +15,13 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0">
         <div class="container-fluid">
           <a class="navbar-brand" href="/index.html"><img src="../assets/img/logo-mobile-transparente.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end bg__color" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
             <div class="offcanvas-header">
               <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/img/logo-mobile-transparente.png"></div>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -50,31 +50,30 @@
       </nav>
     </header>
     <main>
-      <h2 class="titulos">CONTACTANOS</h2>
       <div class="container-fluid">
         <div class="row justify-content-around align-items-center">
-          <div class="col-xs-4 col-lg-4">
+          <div class="col-lg-4">
             <img class="img-fluid" src="../assets/img/logo(389x294).png">
           </div>
-          <form class="col-xs-4 col-lg-4 mt-4" action="./contacto.html" method="get">
-            <div class="form__inputs">
-              <label for="nombre" class="etiqueta">NOMBRE</label>
-              <input type="text" id="nombre" placeholder="Ingrese su nombre">
+          <form class="col-lg-4 d-flex flex-column mt-4 bd-form" action="./contacto.html" method="get">
+            <div class="d-flex flex-column align-items-start mt-2">
+              <label for="nombre">NOMBRE</label>
+              <input class="form-control form-control-sm" type="text" id="nombre" placeholder="Ingrese su nombre">
             </div>
-            <div class="form__inputs">
+            <div class="d-flex flex-column align-items-start mt-2">
               <label for="apellido">APELLIDO</label>
-              <input type="text" id="apellido" placeholder="Ingrese su apellido">
+              <input class="form-control form-control-sm" type="text" id="apellido" placeholder="Ingrese su apellido">
             </div>
-             <div class="form__inputs">
+             <div class="d-flex flex-column align-items-start mt-2">
               <label for="email">EMAIL</label>
-              <input type="email" id="email" placeholder="ejemplo@hotmail.com">
+              <input class="form-control form-control-sm" type="email" id="email" placeholder="ejemplo@hotmail.com">
             </div>
-            <div class="form__inputs">
+            <div class="d-flex flex-column align-items-start mt-2">
               <label for="comentario">MENSAJE (OPCIONAL)</label>
-              <textarea id="comentario" cols="35" rows="8"></textarea>
+              <textarea class="form-control form-control-sm" id="comentario" cols="35" rows="8"></textarea>
             </div>
-            <div class="form__inputs">
-              <input type="submit" value="ENVIAR" class="UI__btn">
+            <div class="mt-3 mb-3">
+              <input class="form__btn" type="submit" value="ENVIAR" id="form__btn">
             </div>
           </form>
         </div>

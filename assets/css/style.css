@@ -25,6 +25,7 @@ body{
     background-image:linear-gradient(to bottom, var(--color5), var(--color4)) ;
 }
 
+
 h2{
     text-align: center;
     font-size: 1.2em;
@@ -340,68 +341,34 @@ a{
 
 /* --- MAIN: CONTACTO --- */
 
-.contactWrapper{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    background-color: #46A5A5;
-    margin-bottom: 30px;
-}
-    
-.sideImg{
-    width: 50%;
-    min-width: 320px;
-    padding-bottom: 10px;
-}
 
-.sideImg img{
-    height: 100%;
-    border: solid 5px #46A5A5;
-}
 
-.formWrapper{
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    padding: 30px 0px 30px 30px;
-    background-color: #46A5A5;
+
+.bd-form{
+    background-image: linear-gradient(to right, var(--color2), var(--color4));
+    border-radius: 5px;
 }
 
 form label{
-    display: block;
     color: white;
-    background-image: linear-gradient(to right, var(--color2), var(--color4));
-    margin-bottom: 5px;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 2px 2px 2px 5px;
+    margin: 10px 0px 5px 2px;
 }
 
-.form__inputs{
-    margin-bottom: 30px;
-    display: block;
+.form__btn{
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 2px 10px 2px 10px;
+    background-color: var(--color2);
     color: white;
-    background-image: linear-gradient(to right, var(--color2), var(--color4));
-    margin-bottom: 5px;
+    border: solid 1px #ffffff;
     border-radius: 5px;
-    padding: 2px 2px 2px 5px;
+    box-shadow: 0px 0px 16px -5px #000000;
 }
 
-.form__inputs input{
-    height: 20px;
+.form__btn:hover{
+    box-shadow: -4px 0px 16px -5px #ffffff;
+    transform: translate(1px,-1px);
 }
-
-
-form .UI__btn{
-    font-size: 1em;
-}
-
-form .UI__btn:hover{
-    background-color: #A3D371;
-}
-
-
 
 
 /* --- FOOTER --- */
