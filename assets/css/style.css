@@ -337,11 +337,14 @@ a{
     }
 }
 
-
+/*
+@media (min-width: 992px){
+    .navbar-expand-lg .offcanvas-body {
+        justify-content: center;
+    }
+}*/
 
 /* --- MAIN: CONTACTO --- */
-
-
 
 
 .bd-form{
