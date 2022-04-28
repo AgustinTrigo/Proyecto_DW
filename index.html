@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,103 +8,119 @@
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4488541cbe.js" crossorigin="anonymous"></script>
         <title>PAGINA PRINCIPAL</title>
-    </head>
+  </head>
 
-    <body>
+  <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg__color">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0 mb-4">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="/index.html"><img src="./assets/img/logo-mobile-transparente.png"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="./index.html"><img src="./assets/img/logo-mobile-transparente.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                      </li>
-                      <li class="nav-item">
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                    <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/img/logo-mobile-transparente.png"></div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">   
+                    <ul class="navbar-nav justify-content-end pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="./pages/productos.html">PRODUCTOS</a>
-                      </li>
-                      <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/como_ayudar.html">COMO AYUDAR</a>
-                      </li>
-                      <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link"  href="./pages/como_ayudar.html">COMO AYUDAR</a>
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-                      </li>
+                        </li>
                     </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                  </div>
+                    </div>
                 </div>
-              </nav>
+                </div>
+            </nav>
         </header>
 
-        <main> 
-            <h2 class="titulos">INICIO</h2> 
-            <div class="container-fluid">
-                <!--ANUNCIOS / PRODUCTOS MAS VENDIDOS / OFERTAS-->
-                <div class="main__img">
-                    <img src="./assets/img/main-logo.png" alt="logo-principal">
+        <main class="container-fluid"> 
+            <div class="main__img">
+                <img src="./assets/img/main-logo.png" alt="logo-principal">
+            </div>
+        <!-- MEDIOS DE PAGO -->
+            <div class="row mt-5 mb-4 medios__pago">
+                <h4 class="col-lg-3 pt-3 pb-2 text-center">MEDIOS DE PAGO</h4>
+                <h4 class="col-lg-3 pt-3 pb-2 text-center">TRANSFERENCIAS BANCARIAS</h4>
+                <h4 class="col-lg-3 pt-3 pb-2 text-center">TARJETAS DE CREDITO</h4>
+                <h4 class="col-lg-3 pt-3 pb-2 text-center">MERCADO PAGO</h4>
+            </div>
+        <!-- CARDS -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-10 col-lg-3 main__card--container d-flex flex-column align-items-center mb-4">
+                    <div class="main__card--img mt-2 bd-card">
+                        <img src="./assets/img/packdental.png" alt="img-higiene-dental">
+                    </div>
+                    <div class="main__card--text">
+                        <h4>HIGIENE DENTAL</h4>
+                        <h4>CEPILLO DE DIENTE</h4>
+                        <h4>PASTA DENTAL</h4>
+                        <h4>HILO DENTAL</h4>
+                    </div>
+                    <div class="form__btn mt-3 mb-3">
+                        <a href="./pages/productos.html">VER PRODUCTOS</a>
+                    </div>
                 </div>
-                <!--FORMAS DE PAGO-->
-                <div class="main__info">
-                    <h4>ABONA COMO QUIERAS</h4>
-                    <h4>TRANSFERENCIA BANCARIA</h4><i class="fa-solid fa-building-columns"></i>
-                    <h4>TARJETAS DE CREDITO</h4><i class="fa-solid fa-credit-card"></i>
-                    <h4>MERCADO PAGO</h4><i class="fa-solid fa-mobile-screen"></i>
+                <div class="col-10 col-lg-3 main__card--container d-flex flex-column align-items-center mb-4">
+                    <div class="main__card--img mt-2  bd-card">
+                        <img src="./assets/img/packcabello.png" alt="img-cuidado-personal">
+                    </div>
+                    <div class="main__card--text">
+                        <h4>CUIDADO PERSONAL</h4>
+                        <h4>SHAMPOO SOLIDO</h4>
+                        <h4>ACONDICIONADOR SOLIDO</h4>
+                        <h4>SOPORTE DE BAMBU</h4>
+                    </div>
+                    <div class="form__btn mt-3 mb-3">
+                        <a href="./pages/productos.html">VER PRODUCTOS</a>
+                    </div>
                 </div>
-                <!--PAQUETES DE PRODUCTOS-->
-                <div class="main__card">
-                    <h4>COMBOS ACCECIBLES</h4>
-                    <div class="main__card--container">
-                        <div class="main__card--img">
-                            <img src="./assets/img/packdental.png" alt="packdental">
-                            <div class="main__card--text">
-                                <h5>HIGIENE BUCAL</h5>
-                                <h6>PASTA DENTAL</h6>
-                                <h6>HILO DENTAL</h6>
-                                <h6>CEPILLO DE BAMBU</h6>            
-                            </div>
-                        </div>
-                        <div class="main__card--img">
-                            <img src="./assets/img/packcabello.png" alt="packcabello">
-                            <div class="main__card--text">
-                                <h5>HIGIENE CAPILAR</h5>
-                                <h6>SHAMPOO SOLIDO</h6>
-                                <h6>ACONDICIONADOR SOLIDO</h6>
-                                <h6>SOPORTE DE BAMBU</h6>         
-                            </div>
-                        </div>
-
-                        <div class="main__card--img">
-                            <img src="./assets/img/packcocina.png" alt="packdental">
-                            <div class="main__card--text">
-                                <h5>ELEMENTOS DE COCINA</h5>
-                                <h6>DETERGENTE SOLIDO</h6>
-                                <h6>ESPONJA VEGETAL</h6>
-                                <h6>SOPORTE DE BAMBU</h6>            
-                            </div>
-                        </div>
+                <div class="col-10 col-lg-3 main__card--container d-flex flex-column align-items-center mb-4">
+                    <div class="main__card--img mt-2  bd-card">
+                        <img src="./assets/img/packcocina.png" alt="img-elentos-cocina">
+                    </div>
+                    <div class="main__card--text">
+                        <h4>ELEMENTOS DE COCINA</h4>
+                        <h4>DETERGENTE SOLIDO</h4>
+                        <h4>ESPONJA VEGETAL</h4>
+                        <h4>SOPORTE DE BAMBU</h4>
+                    </div>
+                    <div class="form__btn mt-3 mb-3">
+                        <a href="./pages/productos.html">VER PRODUCTOS</a>
                     </div>
                 </div>
             </div>
         </main>
-        <footer>
-            <div class="footer__rrss">
-                <h6>NUESTRAS REDES SOCIALES</h6>
-                <ul>
-                    <li class="socialMedia__link"><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a></li>
-                    <li class="socialMedia__link"><a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a></li>
-                </ul>
+        <footer class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
+                    <h4>CONTACTANOS</h4>
+                    <p>WHATSAPP: +54 11 12345678</p>
+                    <p>EMAIL: masmar@hotmail.com</p>
+                </div>  
+                <div class="col-12 col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
+                    <h4>REDES SOCIALES</h4>
+                    <div>
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a>
+                        <a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a>
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

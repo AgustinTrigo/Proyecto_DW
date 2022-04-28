@@ -8,85 +8,98 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4488541cbe.js" crossorigin="anonymous"></script>
         <title>¿COMO AYUDAR?</title>
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg__color">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="/index.html"><img src="../assets/img/logo-mobile-transparente.png"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-mobile-transparente.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/img/logo-mobile-transparente.png"></div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">   
+                    <ul class="navbar-nav justify-content-end pe-3">
+                    <li class="nav-item">
                         <a class="nav-link" href="../index.html">INICIO</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./productos.html">PRODUCTOS</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./nosotros.html">SOBRE NOSOTROS</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./como_ayudar.html">COMO AYUDAR</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                      </li>
+                    </li>
                     </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                  </div>
                 </div>
-              </nav>
-        </header>
-
-        <main>
-            <h2 class="titulos">COMO PODEMOS AYUDAR</h2>
-            <h3 class="titulos">COMENZA REEMPLAZANDO</h3>
-            
-            <div class="main__container">
-                <div class="card__container">
-                    <div class="card__img img1">
-                        <img src="../assets/img/bola-plastico-300x300.png">
-                    </div>
-                    <div class="card__img img2">
-                        <img src="../assets/img/bolsa-sustentable-300x300.png">
-                    </div>
-                </div>
-
-                <div class="card__container">
-                    <div class="card__img img1">
-                        <img src="../assets/img/cepillo-plastico-300x300.png">
-                    </div>
-                    <div class="card__img img2">
-                        <img src="../assets/img/cepillo-bambu-300x300.png">
-                    </div>
-                </div>
-
-                <div class="card__container">
-                    <div class="card__img img1">
-                        <img src="../assets/img/esponja-plastico-300x300.png">
-                    </div>
-                    <div class="card__img img2">
-                        <img src="../assets/img/esponja-vegetal-300x300.png">
-                    </div>
                 </div>
             </div>
+            </nav>
+        </header>
+
+        <main >
+			<div class="row justify-content-center">
+				<div class="col-12 col-lg-3 mt-4 d-flex flex-column align-items-center">
+					<h3>¿COMO PODEMOS AYUDAR?</h3>
+					<h3>COMENZA REEMPLAZANDO</h3>
+				</div>
+				<div class="main__container d-flex flex-column flex-lg-row align-items-center mb-4">
+
+					<div class="card__container">
+						<div class="card__img img1">
+							<img src="../assets/img/bola-plastico-300x300.png">
+						</div>
+						<div class="card__img img2">
+							<img src="../assets/img/bolsa-sustentable-300x300.png">
+						</div>
+					</div>
+
+					<div class="card__container">
+						<div class="card__img img1">
+							<img src="../assets/img/cepillo-plastico-300x300.png">
+						</div>
+						<div class="card__img img2">
+							<img src="../assets/img/cepillo-bambu-300x300.png">
+						</div>
+					</div>
+
+					<div class="card__container">
+						<div class="card__img img1">
+							<img src="../assets/img/esponja-plastico-300x300.png">
+						</div>
+						<div class="card__img img2">
+							<img src="../assets/img/esponja-vegetal-300x300.png">
+						</div>
+					</div>
+				</div>
+			</div>
         </main>
-        <footer>
-            <div class="footer__rrss">
-                <h6>NUESTRAS REDES SOCIALES</h6>
-                <ul>
-                    <li class="socialMedia__link"><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a></li>
-                    <li class="socialMedia__link"><a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a></li>
-                </ul>
+        <footer class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
+                    <h4>CONTACTANOS</h4>
+                    <p>WHATSAPP: +54 11 12345678</p>
+                    <p>EMAIL: masmar@hotmail.com</p>
+                </div>
+                <div class="col-12 col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
+                    <h4>REDES SOCIALES</h4>
+                    <div>
+                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a>
+                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a>
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
