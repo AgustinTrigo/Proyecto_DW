@@ -43,45 +43,6 @@ h2{
 }
 /* --- HEADER --- */
 
-.header__top{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-image: linear-gradient(to bottom, var(--color5), var(--color4));
-    margin-bottom: 5px;
-}
-
-.logo{
-    height: 50px;
-    padding: 0px 4px 0px 4px;
-    order: 2;
-}   
-
-.logo img{
-    width: 100%;
-    height: 40px;
-    padding-top: 10px;
-    text-align: center;
-    color: white;
-    margin-bottom: 30px;
-    background-color: var(--color4);
-    animation-name: animTitulos;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    z-index: 2;
-}
-
-@keyframes animTitulos {
-    0%{
-        transform: translate(0px,0px);
-    }
-    100%{
-        transform: translate(0px,100px);
-    }
-}
-
-
 h4{
     font-size: 1em;
     color: white;
@@ -90,6 +51,12 @@ h4{
 .medios__pago{
     padding: 5px;
     background-color: var(--color9);
+}
+
+.bd__section{
+    margin: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.45);
 }
 
 a{
@@ -110,8 +77,17 @@ a{
 
 /* (INDEX/MAIN) CARD */
 
+/*
+.main__card--position{
+
+}*/
+
 .main__card--container{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .main__card--text{
@@ -136,6 +112,10 @@ a{
     border: solid 1px #000000;
 }
 
+
+.carousel-item{
+    max-height: 500px;
+}
 /* --- (NOSOTROS) MAIN  ---*/
 
 .nosotros__container{
@@ -173,7 +153,7 @@ h3{
     width: 300px;
     height: 300px;
     position: relative;
-    margin-bottom: 10px;
+    margin: 10px 10px;
     
 }
 
@@ -251,7 +231,7 @@ footer a{
 }
 
 
-@media screen and (min-width: 1280px){
+@media screen and (max-width: 1280px){
 
     h2{
         font-size: 1.5em;
@@ -313,11 +293,6 @@ footer a{
         margin-bottom: 50px;
     }
 
-    .main__card--container{
-        display: flex;
-        flex-flow: row;
-    }
-
     .main__card--img{
         margin: 0px 20px 0px 20px;
     }
@@ -339,7 +314,7 @@ footer a{
         max-width: 80%;
     }
 
-    .main__container{
+    .main__card--container{
         flex-flow: row wrap;
         justify-content: center;
     }
