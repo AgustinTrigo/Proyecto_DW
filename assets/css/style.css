@@ -53,6 +53,12 @@ h4{
     background-color: var(--color9);
 }
 
+.bd__section{
+    margin: 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px -1px rgba(0,0,0,0.45);
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -94,7 +100,7 @@ a{
     line-height: 25px;
     color: white;
     opacity: 0;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .main__card--container:hover > .main__card--text{
@@ -107,6 +113,10 @@ a{
     border: solid 1px #000000;
 }
 
+
+.carousel-item{
+    max-height: 500px;
+}
 /* --- (NOSOTROS) MAIN  ---*/
 
 .nosotros__container{
@@ -144,7 +154,7 @@ h3{
     width: 300px;
     height: 300px;
     position: relative;
-    margin-bottom: 10px;
+    margin: 10px 10px;
     
 }
 
@@ -222,7 +232,7 @@ footer a{
 }
 
 
-@media screen and (min-width: 1280px){
+@media screen and (max-width: 1280px){
 
     h2{
         font-size: 1.5em;
@@ -305,7 +315,7 @@ footer a{
         max-width: 80%;
     }
 
-    .main__container{
+    .main__card--container{
         flex-flow: row wrap;
         justify-content: center;
     }
