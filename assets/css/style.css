@@ -119,12 +119,11 @@ a{
     top: 9px;
     width: 300px;
     height: 0%;
-    padding-top: 100px;
     text-align: center;
     line-height: 25px;
     color: white;
     opacity: 0;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .main__card--container:hover > .main__card--text{
