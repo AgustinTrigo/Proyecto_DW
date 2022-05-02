@@ -112,10 +112,17 @@ a{
     border: solid 1px #000000;
 }
 
+.subtittle{
+    position: relative;
+    top: 0;
+    left: auto;
+    text-align: center;
 
-.carousel-item{
-    max-height: 500px;
 }
+
+
+
+
 /* --- (NOSOTROS) MAIN  ---*/
 
 .nosotros__container{
@@ -128,7 +135,7 @@ a{
 .nosotros__text{
     text-align: center;
     font-size: 1em;
-    max-width: 300px;
+    max-width: 790px;
     line-height: 25px;
     padding-bottom: 20px;
 }
