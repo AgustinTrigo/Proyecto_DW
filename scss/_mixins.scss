@@ -1,6 +1,14 @@
-@mixin propiedadesGenerales ($bg-color, $margin, $bd-radius, $bd-shadow){
+@mixin propiedadesGenerales ($bg-color, $margin, $padding, $bd-radius, $bd-shadow){
     background-color: $bg-color;
     margin: $margin;
+    padding: $padding;
     border-radius: $bd-radius;
-    box-shadow: $bd-shadow;  
+    box-shadow: $bd-shadow;
+    
+}
+
+@mixin Large{
+    @media (min-width: 992px){
+        @content;
+    }
 }

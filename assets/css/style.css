@@ -11124,41 +11124,127 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
-@media (min-width: 992px) {
-  .bg__style--medios h4:nth-child(1) {
-    border-right: solid 2px white;
-    border-bottom: none;
-  }
-}
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h3 {
+  color: #46A5A5;
+  font-size: 1.3em;
 }
 
 h4 {
-  color: white;
+  color: #46A5A5;
   font-size: 1em;
 }
 
 .bg__color {
-  background-image: linear-gradient(to right, #8CDECC, #EEF2E4);
+  background-image: linear-gradient(to right, #8CDECC, #b3f1ce);
 }
 
 .bg__style {
   background-color: white;
   margin: 10px 10px;
+  padding: "";
   border-radius: 5px;
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.45);
 }
 
 .bg__style--medios {
-  background-color: #b3f1ce;
+  background-color: white;
   margin: 10px 10px;
+  padding: "";
   border-radius: 5px;
-  box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.45);
 }
 .bg__style--medios h4:nth-child(1) {
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px #46A5A5;
+}
+@media (min-width: 992px) {
+  .bg__style--medios h4:nth-child(1) {
+    border-right: solid 2px #46A5A5;
+    border-bottom: none;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-image: linear-gradient(to right, #8CDECC, #b3f1ce);
+}
+footer a {
+  padding: 10px 10px 10px 0px;
+}
+
+.main__img {
+  position: relative;
+  background-color: #46A5A5;
+}
+.main__img img {
+  max-width: 100%;
+  max-height: 350px;
+}
+.main__img h4 {
+  display: inline-block;
+  position: absolute;
+  top: 135px;
+  color: white;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.main__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.main__card:hover > .main__card--text {
+  height: 300px;
+  opacity: 0.7;
+  background-color: #15434B;
+}
+@media (min-width: 992px) {
+  .main__card {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+.main__card--text {
+  position: absolute;
+  top: 9px;
+  width: 300px;
+  height: 0%;
+  text-align: center;
+  line-height: 25px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.main__card--text h4 {
+  color: white;
+}
+
+.main__card--btn {
+  background-color: #46A5A5;
+  margin: "";
+  padding: 2px 5px;
+  border-radius: 5px;
+  box-shadow: "";
+  max-width: 150px;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: white;
+  border: solid 1px #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */
