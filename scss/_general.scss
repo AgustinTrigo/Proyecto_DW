@@ -27,29 +27,51 @@ h4{
 .bg__style{
     @include propiedadesGenerales(
         white, 
-        10px 10px,
-        "",
-        5px, 
+        map-get($margins, forBoxes),
+        10px,
+        0, 
         0px 2px 5px -3px rgba(0,0,0,0.45)
     )
 }
 
-.bg__style--medios{
-    @include propiedadesGenerales(
-        white, 
-        10px 10px,
-        "",
-        5px, 
-        0px 2px 5px -3px rgba(0,0,0,0.45)
-    );
-    h4:nth-child(1){
-        border-bottom: solid 2px $colorB;
-
-        @include Large{     
+.bg__style--mediosDePago{
+    @extend .bg__style;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4{
+        max-width: 285px;
+        text-align: center;
+        margin: 10px;
+        padding: 10px 20px;
+        &:nth-child(1){
+            border-bottom: solid 2px $colorB;
+        }
+    };
+    
+    @include Large{ 
+        flex-direction: row;
+        justify-content: space-between;
+        h4:nth-child(1){
             border-right: solid 2px $colorB;
             border-bottom: none;
-        }
+        }  
+    };
+}
+
+.bg__style--nosotros{
+    @extend .bg__style;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div p {
+        padding: 20px;
     }
+    @include Large{ 
+        flex-direction: row;
+        justify-content: space-between;
+        
+    };
 }
 
 footer{

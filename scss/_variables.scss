@@ -7,3 +7,9 @@ $colorF: #EEF2E4;
 $colorG: #A3D371;
 $colorH: #f7f7f7;
 $colorI: #abe6c4;
+$logoGradient: linearGradient(to top right, $colorD, $colorE);
+
+$margins:(
+    forBoxes: 50px 0px,
+    forSubtitles: 20px,
+)

@@ -11149,28 +11149,51 @@ h4 {
   background-image: linear-gradient(to right, #8CDECC, #b3f1ce);
 }
 
-.bg__style {
+.bg__style, .bg__style--nosotros, .bg__style--mediosDePago {
   background-color: white;
-  margin: 10px 10px;
-  padding: "";
-  border-radius: 5px;
+  margin: 50px 0px;
+  padding: 10px;
+  border-radius: 0;
   box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.45);
 }
 
-.bg__style--medios {
-  background-color: white;
-  margin: 10px 10px;
-  padding: "";
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.45);
+.bg__style--mediosDePago {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.bg__style--medios h4:nth-child(1) {
+.bg__style--mediosDePago h4 {
+  max-width: 285px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px 20px;
+}
+.bg__style--mediosDePago h4:nth-child(1) {
   border-bottom: solid 2px #46A5A5;
 }
 @media (min-width: 992px) {
-  .bg__style--medios h4:nth-child(1) {
+  .bg__style--mediosDePago {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bg__style--mediosDePago h4:nth-child(1) {
     border-right: solid 2px #46A5A5;
     border-bottom: none;
+  }
+}
+
+.bg__style--nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg__style--nosotros div p {
+  padding: 20px;
+}
+@media (min-width: 992px) {
+  .bg__style--nosotros {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
