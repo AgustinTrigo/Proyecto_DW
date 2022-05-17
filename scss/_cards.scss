@@ -1,13 +1,17 @@
-.main__card{
-    position: relative;
+.product__card{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    &:hover > .main__card--text{
-        height: 300px;
-        opacity: .7;
-        background-color: $colorA;
+    width: 195px;
+    border-radius: 5px; 
+    .product__card--img{
+        width: 180px;
+        margin-bottom: 10px;
+        img{
+            width: 100%;
+            border-radius: 3px;
+        }
     }
     @include Large{
         margin-left: 40px;
@@ -15,22 +19,14 @@
     }
 }
 
-.main__card--text{
-    position: absolute;
-    top: 9px;
-    width: 300px;
-    height: 0%;
+.product__card--text{
     text-align: center;
-    line-height: 25px;
-    opacity: 0;
-    transition: all 0.5s;
     h4{
-        color: white;
+        font-size: 13px;
     }
 }
 
-
-.main__card--btn{
+.product__card--btn{
     @include propiedadesGenerales(
         $colorB, 
         "", 
@@ -38,10 +34,92 @@
         5px, 
         "",
     );
-    max-width: 150px;
     text-align: center;
     font-size: 0.9rem;
     letter-spacing: 1px;
     color: white;
-    border: solid 1px #ffffff;
+}
+
+/*Section con submenu de combos*/
+
+.submenu__card{
+    position: relative;
+    max-height: 400px;
+    img{
+        max-width: 100%;
+    }
+}
+
+.submenu__card--text{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    h3{
+        position: relative;
+        top: 25px;
+        left: 25px;
+        font-family: 'Koulen', cursive;
+        font-size: 2em;
+        letter-spacing: 3px;
+        color: $colorB;
+        opacity: 0.9;
+        @include Large{
+            width: 95%;
+        }
+    }
+    a{
+        position: relative;
+        top: 35px;
+        left: 25px;
+        padding: 5px 10px;
+        font-weight: 400;
+        border: solid 2px white;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px -3px rgba(0,0,0,0.45);
+        background-color: rgba($color: $colorB, $alpha: 0.25);
+        &:active{
+            color: $colorB;
+        }
+    } 
+}
+
+/* Tarjetas interactivas (como_ayudar.html)*/
+
+.card__container{
+    position: relative;
+    height: 250px;
+    margin: 50px 0px;
+    &:hover .img1{
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+    &:hover .img2{
+        opacity: 1;
+    }
+}
+
+.card__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.9s;
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.img1{
+    opacity: 1;
+    border: solid 2px red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img2{
+    opacity: 0;
+    border: solid 3px $colorB;
+    border-radius: 50%;
+    overflow: hidden;
 }

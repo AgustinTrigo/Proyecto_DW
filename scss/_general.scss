@@ -1,7 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: $colorH;
-    height: 100vh;
 }
 
 a{
@@ -9,26 +8,31 @@ a{
     text-decoration: none;
 }
 
-h3{
+h2{
+    font-family: 'Koulen', cursive;
+    font-size: 2.5em;
+    letter-spacing: 3px;
     color: $colorB;
-    font-size: 1.3em;
+    text-transform: uppercase;
 }
 
 h4{
     color: $colorB;
     font-size: 1em;
+    text-transform: uppercase;
 }
 
 
 .bg__color{
-    background-image:linear-gradient(to right, $colorD, $colorE);
+    background-color: $colorD;
+    /*background-image:linear-gradient(to right, $colorD, $colorE);*/
 }
 
 .bg__style{
     @include propiedadesGenerales(
         white, 
         map-get($margins, forBoxes),
-        10px,
+        0,
         0, 
         0px 2px 5px -3px rgba(0,0,0,0.45)
     )
@@ -59,6 +63,17 @@ h4{
     };
 }
 
+.bg__style--submenu{
+    @extend .bg__style;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include Large{ 
+        flex-direction: row;
+        justify-content: space-between; 
+    };
+}
+
 .bg__style--nosotros{
     @extend .bg__style;
     display: flex;
@@ -74,30 +89,100 @@ h4{
     };
 }
 
+.bg__style--products{
+    @include propiedadesGenerales(
+        white, 
+        0,
+        0,
+        0, 
+        0px 2px 5px -3px rgba(0,0,0,0.45)
+    )
+}
+
+.bg__style--contacto{
+    @include propiedadesGenerales(
+        $colorD, 
+        map-get($margins, forBoxes),
+        0,
+        0, 
+        0px 2px 5px -3px rgba(0,0,0,0.45)
+    );
+    color: white;
+    label{
+        background-image: linear-gradient(to right, $colorB, $colorD);
+        border-radius: 20px;
+        width: 100%;
+        padding: 5px 0px 5px 10px;
+        margin-bottom: 5px;
+        font-weight: 500;
+    };
+    input{
+        border-radius: 20px;
+    }
+    button{
+        border: none;
+    }
+}
+
 footer{
     position: relative;
     bottom: 0;
-    background-image:linear-gradient(to right, $colorD, $colorE);
+    background-color: $colorD;
+    /*background-image:linear-gradient(to right, $colorD, $colorE);*/
     a{
         padding: 10px 10px 10px 0px;
     }
 }
 
+/*clase para el logo con CSS (h4)*/
 .main__img{
     position: relative;
-    background-color: $colorB;
     img{
         max-width: 100%;
-        max-height: 350px;
+        max-height: 400px;
+        border-radius: 5px;
     }
     h4{
         display: inline-block;
         position: absolute;
-        top: 135px;
+        top: 150px;
         color: white;
         font-size: 3em;
         font-weight: 400;
-    }
-    
+    } 
 }
 
+/*clase para el logo con CSS (h4)*/
+.nav__logo{
+    position: relative;
+    img{
+        max-width: 100%;
+    }
+    h4{
+        display: inline-block;
+        position: absolute;
+        top: 8px;
+        left: 20px;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        &::first-letter{
+            color: $colorB;
+        }
+    }
+}
+
+.nav__logo--offcanvas{
+    position: relative;
+    h4{
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        &::first-letter{
+            color: $colorB;
+        }
+    }
+}

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4488541cbe.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../assets/css/style.css">
         
@@ -17,13 +17,22 @@
         <header>
             <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0">
               <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-mobile-transparente.png" alt="logo"></a>
+                <a class="navbar-brand" href="../index.html">
+                    <div class="nav__logo">
+                        <img src="../assets/img/logo_blanco_transparente.png" alt="logo">
+                        <h4>+mar</h4>
+                    </div>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas offcanvas-end bg__color" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
                   <div class="offcanvas-header">
-                    <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/img/logo-mobile-transparente.png" alt="logoOffCanvas"></div>
+                    <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <div class="nav__logo--offcanvas">
+                            <h4>+mar</h4>
+                        </div>
+                    </div>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">   
@@ -51,65 +60,205 @@
         </header>
 
 
-        <main>
-            <div class="row justify-content-center mt-5 mb-5 bg__style">
-                <div class="col-10 col-lg-10 mt-3 mb-3 text-center">
-                    <h3>PRODUCTOS</h3>
+        <main class="container-fluid">
+            <div class="row justify-content-center mt-5 mb-5">
+                <!-- ENCABEZADO -->
+                <div class="col-11">
+                    <h2>articulos sustentables</h2>
                 </div>
-                <div class="col-10 col-lg-3 mt-3 mb-4 main__card">
-                    <div class="mt-2">
-                        <img src="../assets/img/cepillo300x300.png" alt="img-cepillo-bambu">
+                <!-- PRODUCTS CARDS GALLERY -->
+                <!-- 1 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/cepillos_dientes.jpg" alt="img-cepillo-bambu">
                     </div>
-                    <div class="main__card--text d-flex flex-column justify-content-center">
-                        <h4>CEPILLO DE BAMBU</h4>
-                        <h4>PRECIO CONTADO</h4>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>cepillo de bamboo</h4>
+                        <h4>precio contado</h4>
                         <h4>$ 249.99</h4>
                     </div>
-                    <div class="col-8 mt-3 mb-3 main__card--btn">
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
                         <a href="#">COMPRAR</a>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 mt-3 mb-4 main__card">
-                    <div class="mt-2">
-                        <img src="../assets/img/hilodental300x300.png" alt="img-hilo-dental">
+                <!-- 2 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/hilo_dental.jpg" alt="img-hilo-dental">
                     </div>
-                    <div class="main__card--text d-flex flex-column justify-content-center">
-                        <h4>HILO DENTAL</h4>
-                        <h4>PRECIO CONTADO</h4>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>hilo dental</h4>
+                        <h4>precio contado</h4>
                         <h4>$ 449.99</h4>
                     </div>
-                    <div class="col-8 mt-3 mb-3 main__card--btn">
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
                         <a href="#">COMPRAR</a>
                     </div>
                 </div>
-                <div class="col-10 col-lg-3 mt-3 mb-4 main__card">
-                    <div class="mt-2">
-                        <img src="../assets/img/pastadental300x300.png" alt="img-pasta-dental">
+                <!-- 3 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/pasta_dental.jpg" alt="img-pasta-dental">
                     </div>
-                    <div class="main__card--text d-flex flex-column justify-content-center">
-                        <h4>PASTA DENTAL</h4>
-                        <h4>PRECIO CONTADO</h4>
-                        <h4>$ 329.99</h4>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>pasta dental</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
                     </div>
-                    <div class="col-8 mt-3 mb-3 main__card--btn">
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
                         <a href="#">COMPRAR</a>
                     </div>
                 </div>
+                <!-- 4 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/shampoo_solido.jpg" alt="img-shampoo-solido">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>shampoo solido</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/acondicionador_solido.jpg" alt="img-acondicionador-solido">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>acondicionador solido</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/jabonera_madera.jpg" alt="img-jabonera">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>jabonera de madera</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/acondicionador_crema.jpg" alt="img-acondicionador-crema">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>acondionador en crema</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/jabon_exfoliante.jpg" alt="img-jabon-exfoliante">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>jabon exfoliante</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/esponja_vegetal.jpg" alt="img-esponja-exfoliante">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>esponja exfoliante</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/envoltorio_reutilizable.jpg" alt="img-envoltorio">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>Envoltorio reutilizable</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/detergente_solido.jpg" alt="img-detergente-solido">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>detergente solido</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col-10 col-lg-3 mt-3 mb-4 product__card bg__style--products">
+                    <div class="product__card--img mt-2">
+                        <img src="../assets/img/productos/esponja_vegetal_cocina.jpg" alt="img-esponja-vegetal-cocina">
+                    </div>
+                    <div class="product__card--text d-flex flex-column justify-content-center">
+                        <h4>esponja vegetal</h4>
+                        <h4>precio contado</h4>
+                        <h4>$ 449.99</h4>
+                    </div>
+                    <div class="col-8 mt-3 mb-3 product__card--btn">
+                        <a href="#">COMPRAR</a>
+                    </div>
+                </div>
+            </div>
+            <!-- MEDIOS DE PAGO -->
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 bg__style--mediosDePago">
+                    <h4>TODOS LOS MEDIOS DE PAGO</h4>
+                    <h4>TRANSFERENCIAS BANCARIAS</h4>
+                    <h4>TARJETAS DE CREDITO</h4>
+                    <h4>MERCADO PAGO</h4>
+                </div> 
             </div>
         </main>
 
         <footer class="container-fluid">
             <div class="row justify-content-between">
-                <div class="col-12 col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
                     <h4>CONTACTANOS</h4>
                     <p>WHATSAPP: +54 11 12345678</p>
                     <p>EMAIL: masmar@hotmail.com</p>
                 </div>
-                <div class="col-12 col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
                     <h4>REDES SOCIALES</h4>
                     <div>
-                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a>
-                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a>
+                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo_instagram.png" alt="InstagramLogo"></a>
+                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo_facebook.png" alt="FacebookLogo"></a>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4488541cbe.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -18,13 +18,22 @@
         <header>
             <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0 mb-4">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"><img src="./assets/img/logo-mobile-transparente.png" alt="logo"></a>
+                    <a class="navbar-brand" href="./index.html">
+                        <div class="nav__logo">
+                            <img src="./assets/img/logo_blanco_transparente.png" alt="logo">
+                            <h4>+mar</h4>
+                        </div>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas offcanvas-end bg__color" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
                         <div class="offcanvas-header">
-                            <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/img/logo-mobile-transparente.png" alt="logoOffCanvas"></div>
+                            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <div class="nav__logo--offcanvas">
+                                    <h4>+mar</h4>
+                                </div>
+                            </div>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">   
@@ -51,82 +60,67 @@
             </nav>
         </header>
 
-        <main>
-            <div class="main__img d-flex justify-content-center">
-                <img src="./assets/img/logowttext.png" alt="img-pexel">
-                <h4>+MAR</h4>
-            </div>
-
+        <main class="container-fluid">
+            <div class="row  justify-content-center mt-5 mb-5">
+                <div class="col-11">
+                    <h2>mas mar: productos sustentables</h2>
+                </div>
+            </div>    
             <!-- MEDIOS DE PAGO -->
             <div class="row justify-content-center">
-                <div class="col-lg-10 bg__style--mediosDePago">
+                <div class="col-12 col-lg-10 bg__style--mediosDePago">
                     <h4>MEDIOS DE PAGO</h4>
                     <h4>TRANSFERENCIAS BANCARIAS</h4>
                     <h4>TARJETAS DE CREDITO</h4>
                     <h4>MERCADO PAGO</h4>
                 </div> 
             </div>
-            <!-- CARDS -->
-            <div class="row justify-content-center mt-5 mb-5 bg__style">
-                <div class="col-10 col-lg-10 mt-3 mb-3 text-center">
-                    <h3>COMBOS</h3>
-                </div>
-                <div class="col-10 col-lg-3 mt-3 mb-4 main__card">
-                    <div class="mt-2">
-                        <img src="./assets/img/packdental.png" alt="img-higiene-dental">
+            <!-- COMBOS SUBMENU -->
+            <section class="row justify-content-center">
+                <div class="col-lg-11 bg__style--submenu">
+                    <div class="submenu__card">
+                        <div>
+                            <img src="./assets/img/higiene_dental.jpg" alt="img-higieneDental">
+                        </div>
+                        <div class="submenu__card--text">
+                            <h3>higiene dental</h3>
+                            <a href="./pages/productos.html">VER MAS</a>
+                        </div>
                     </div>
-                    <div class="main__card--text d-flex flex-column justify-content-center">
-                        <h4>HIGIENE DENTAL</h4>
-                        <h4>CEPILLO DE DIENTE</h4>
-                        <h4>PASTA DENTAL</h4>
-                        <h4>HILO DENTAL</h4>
+                    <div class="submenu__card">
+                        <div>
+                            <img src="./assets/img/cuidado_personal.jpg" alt="img-cuidadoPersonal">
+                        </div>
+                        <div class="submenu__card--text">
+                            <h3>cuidado personal</h3>
+                            <a href="./pages/productos.html">VER MAS</a>
+                        </div>
                     </div>
-                    <div class="col-8 mt-3 mb-3 main__card--btn">
-                        <a href="./pages/productos.html">VER PRODUCTOS</a>
+                    <div class="submenu__card">
+                        <div>
+                            <img src="./assets/img/elementos_cocina.jpg" alt="img-elementosCocina">
+                        </div>
+                        <div class="submenu__card--text">
+                            <h3>elementos de cocina</h3>
+                            <a href="./pages/productos.html">VER MAS</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-10 col-lg-3 mt-3 mb-4 main__card">
-                    <div class="mt-2">
-                        <img src="./assets/img/packcabello.png" alt="img-cuidado-personal">
                     </div>
-                    <div class="main__card--text d-flex flex-column justify-content-center">
-                        <h4>CUIDADO PERSONAL</h4>
-                        <h4>SHAMPOO SOLIDO</h4>
-                        <h4>ACONDICIONADOR SOLIDO</h4>
-                        <h4>SOPORTE DE BAMBU</h4>
-                    </div>
-                    <div class="col-8 mt-3 mb-3 main__card--btn">
-                        <a href="./pages/productos.html">VER PRODUCTOS</a>
-                    </div>
-                </div>
-                <div class="col-10 col-lg-3 mt-3 mb-4 main__card">
-                    <div class="mt-2">
-                        <img src="./assets/img/packcocina.png" alt="img-elentos-cocina">
-                    </div>
-                    <div class="main__card--text d-flex flex-column justify-content-center">
-                        <h4>ELEMENTOS DE COCINA</h4>
-                        <h4>DETERGENTE SOLIDO</h4>
-                        <h4>ESPONJA VEGETAL</h4>
-                        <h4>SOPORTE DE BAMBU</h4>
-                    </div>
-                    <div class="col-8 mt-3 mb-3 main__card--btn">
-                        <a href="./pages/productos.html">VER PRODUCTOS</a>
-                    </div>
-                </div>
-            </div>
+                </div>    
+            </section>
         </main>
         <footer class="container-fluid">
             <div class="row justify-content-between">
-                <div class="col-12 col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
                     <h4>CONTACTANOS</h4>
                     <p>WHATSAPP: +54 11 12345678</p>
                     <p>EMAIL: masmar@hotmail.com</p>
                 </div>  
-                <div class="col-12 col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
                     <h4>REDES SOCIALES</h4>
                     <div>
-                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a>
-                        <a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a>
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./assets/img/logo_instagram.png" alt="InstagramLogo"></a>
+                        <a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/logo_facebook.png" alt="FacebookLogo"></a>
                     </div>
                 </div>
             </div>

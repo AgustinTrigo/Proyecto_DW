@@ -10,95 +10,107 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4488541cbe.js" crossorigin="anonymous"></script> 
     </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-mobile-transparente.png" alt="logo"></a>
+                <a class="navbar-brand" href="../index.html">
+                    <div class="nav__logo">
+                        <img src="../assets/img/logo_blanco_transparente.png" alt="logo">
+                        <h4>+mar</h4>
+                    </div>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                <div class="offcanvas-header">
-                    <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/img/logo-mobile-transparente.png" alt="logoOffCanvas"></div>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">   
-                    <ul class="navbar-nav justify-content-end pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./productos.html">PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./nosotros.html">SOBRE NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./como_ayudar.html">COMO AYUDAR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                    </li>
-                    </ul>
-                </div>
+                <div class="offcanvas offcanvas-end bg__color" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <div class="nav__logo--offcanvas">
+                                <h4>+mar</h4>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">   
+                        <ul class="navbar-nav justify-content-end pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./como_ayudar.html">COMO AYUDAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             </nav>
         </header>
 
-        <main >
-			<div class="row justify-content-center bd__section">
-				<div class="col-12 col-lg-3 mt-4 d-flex flex-column align-items-center">
-					<h3>¿COMO PODEMOS AYUDAR?</h3>
-					<h3>COMENZA REEMPLAZANDO</h3>
-				</div>
-				<div class="d-flex flex-column flex-lg-row align-items-center justify-content-center mb-4
-                ">
-					<div class="card__container">
-						<div class="card__img img1">
-							<img src="../assets/img/bola-plastico-300x300.png">
-						</div>
-						<div class="card__img img2">
-							<img src="../assets/img/bolsa-sustentable-300x300.png">
-						</div>
-					</div>
+        <main class="container-fluid">
 
-					<div class="card__container">
-						<div class="card__img img1">
-							<img src="../assets/img/cepillo-plastico-300x300.png">
-						</div>
-						<div class="card__img img2">
-							<img src="../assets/img/cepillo-bambu-300x300.png">
-						</div>
-					</div>
+			<div class="row justify-content-center mt-5 mb-5">
+                <!-- ENCABEZADO -->
+                <div class="col-11">
+                    <h2>como ayudar</h2>
+                    <h4>podes comenzar reemplazando algunos objetos de uso diario</h4>
+                    <h4>(toca la imagen y descubri como)</h4>
+                </div>
+                <!-- CARDS INTERACTIVAS-->
+                <!-- 1 -->
+                 <div class="col-7 col-lg-3 card__container">
+                     <div class="card__img img1">
+                         <img src="../assets/img/interactivos/bolsa_plastico.jpg" alt="bolsa-plastico">
+                     </div>
+                     <div class="card__img img2">
+                         <img src="../assets/img/interactivos/bolsa_reutilizable.jpg" alt="bolsa-reutilizable">
+                     </div>
+                 </div>
+                <!-- 2 -->
+                <div class="col-7 col-lg-3 card__container">
+                    <div class="card__img img1">
+                         <img src="../assets/img/interactivos/cepillo_plastico.jpg" alt="cepillo-plastico">
+                    </div>
+                    <div class="card__img img2">
+                        <img src="../assets/img/interactivos/cepillo_bamboo.jpg" alt="cepillo-bamboo">
+                     </div>
+                </div>
+                 <!-- 3 -->
+                <div class="col-7 col-lg-3 card__container">
+                    <div class="card__img img1">
+                         <img src="../assets/img/interactivos/esponja_plastico.jpg" alt="esponja-plastico">
+                    </div>
+                    <div class="card__img img2">
+                        <img src="../assets/img/interactivos/esponja_vegetal.jpg" alt="esponja-vegetal">
+                    </div>
+                </div>
 
-					<div class="card__container">
-						<div class="card__img img1">
-							<img src="../assets/img/esponja-plastico-300x300.png">
-						</div>
-						<div class="card__img img2">
-							<img src="../assets/img/esponja-vegetal-300x300.png">
-						</div>
-					</div>
-				</div>
-			</div>
+            </div>
         </main>
         <footer class="container-fluid">
             <div class="row justify-content-between">
-                <div class="col-12 col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
                     <h4>CONTACTANOS</h4>
                     <p>WHATSAPP: +54 11 12345678</p>
                     <p>EMAIL: masmar@hotmail.com</p>
                 </div>
-                <div class="col-12 col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
                     <h4>REDES SOCIALES</h4>
                     <div>
-                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a>
-                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a>
+                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo_instagram.png" alt="InstagramLogo"></a>
+                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo_instagram.png" alt="FacebookLogo"></a>
                     </div>
                 </div>
             </div>

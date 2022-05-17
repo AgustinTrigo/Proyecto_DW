@@ -10,20 +10,29 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/4488541cbe.js" crossorigin="anonymous"></script>  
     </head>
     <body>
         <header>
             <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img src="../assets/img/logo-mobile-transparente.png" alt="logo"></a>
+                <a class="navbar-brand" href="../index.html">
+                    <div class="nav__logo">
+                        <img src="../assets/img/logo_blanco_transparente.png" alt="logo">
+                        <h4>+mar</h4>
+                    </div>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas offcanvas-end bg__color" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
                 <div class="offcanvas-header">
-                    <div class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../assets/img/logo-mobile-transparente.png" alt="logoOffCanvas"></div>
+                    <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <div class="nav__logo--offcanvas">
+                            <h4>+mar</h4>
+                        </div>
+                    </div>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">   
@@ -50,11 +59,14 @@
             </nav>
         </header>
 
-        <main>
-            <div class="row">
+        <main class="container-fluid">
+            <div class="row justify-content-center mt-5 mb-5">
+                <!-- ENCABEZADO -->
+                <div class="col-11">
+                    <h2>conoce un poco sobre nosotros</h2>
+                </div>
                 <div class="bg__style--nosotros">
                     <div class="col-10 col-lg-6 text-center">
-                        <h3>CONOCE UN POCO MAS SOBRE NOSOTROS</h3>
                         <p>
                             Cada año llegan al océano unas 9 millones de toneladas de residuos plásticos desde regiones costeras, el equivalente a 15 bolsas llenas de desechos plásticos acumuladas en cada metro de la costa en el mundo.
                             El 40% del plástico producido es solo para envases que se usan una sola vez y se tiran.
@@ -62,8 +74,8 @@
                             Nuestros productos eco-friendly suplantan a aquellos de uso diario que contaminan, para derle un respiro al ambiente... y a nuestra casa.
                         </p>
                     </div>
-                    <div class="col-12 col-lg-6 main__img d-flex justify-content-center">
-                        <img src="../assets/img/logowttext.png" alt="img-pexel">
+                    <div class="col-12 col-lg-6 main__img d-flex justify-content-center mt-4 mb-lg-4">
+                        <img src="../assets/img/mar-arena.jpg" alt="img-mar-arena">
                         <h4>+MAR</h4>
                     </div>
                 </div>
@@ -72,16 +84,16 @@
 
         <footer class="container-fluid">
             <div class="row justify-content-between">
-                <div class="col-12 col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
                     <h4>CONTACTANOS</h4>
                     <p>WHATSAPP: +54 11 12345678</p>
                     <p>EMAIL: masmar@hotmail.com</p>
                 </div>
-                <div class="col-12 col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
+                <div class="col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
                     <h4>REDES SOCIALES</h4>
                     <div>
-                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo-inst-white40x40.png" alt="InstagramLogo"></a>
-                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo-fb-white40x40.png" alt="FacebookLogo"></a>
+                      <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../assets/img/logo_instagram.png" alt="InstagramLogo"></a>
+                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../assets/img/logo_facebook.png" alt="FacebookLogo"></a>
                     </div>
                 </div>
             </div>
