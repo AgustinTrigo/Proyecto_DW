@@ -61,11 +61,50 @@
         </header>
 
         <main class="container-fluid">
+            <!--
             <div class="row  justify-content-center mt-5 mb-5">
                 <div class="col-11">
                     <h2>mas mar: productos sustentables</h2>
                 </div>
-            </div>    
+            </div>
+            -->
+
+            <!-- CARRUCEL -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">    
+                        <div class="main__carrucel--text">
+                            <h2>mas mar: productos sustentables</h2>
+                            <img src="./assets/img/mar-arena.jpg" alt="img-mar-arena" class="img-fluid"> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main__carrucel--text">
+                            <h2>mas mar: productos sustentables</h2>
+                            <img src="./assets/img/mar-arena.jpg" alt="img-mar-arena" class="img-fluid"> 
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="main__carrucel--text">
+                            <h2>mas mar: productos sustentables</h2>
+                            <img src="./assets/img/mar-arena.jpg" alt="img-mar-arena" class="img-fluid"> 
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
             <!-- MEDIOS DE PAGO -->
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10 bg__style--mediosDePago">
@@ -110,18 +149,24 @@
             </section>
         </main>
         <footer class="container-fluid">
-            <div class="row justify-content-between">
-                <div class="col-lg-4 mt-4 mb-2 d-flex flex-column align-items-center">
-                    <h4>CONTACTANOS</h4>
-                    <p>WHATSAPP: +54 11 12345678</p>
-                    <p>EMAIL: masmar@hotmail.com</p>
-                </div>  
-                <div class="col-lg-4 mt-4 mb-4 d-flex flex-column align-items-center">
-                    <h4>REDES SOCIALES</h4>
-                    <div>
-                        <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="./assets/img/logo_instagram.png" alt="InstagramLogo"></a>
-                        <a href="https://es-la.facebook.com/" target="_blank"><img src="./assets/img/logo_facebook.png" alt="FacebookLogo"></a>
+            <div class="row justify-content-lg-around">
+                <div class="col-8 col-lg-3">
+                    <h5 class="mt-4">contactanos</h5>
+                    <div class="mb-5 footer__info"> 
+                        <h6><i class="fa-regular fa-envelope"></i>masmar@hotmail.com</h6>
+                        <h6><i class="fa-solid fa-location-dot"></i>Puerto Madryn, Chubut.</h6>
                     </div>
+                </div>
+                <div class="col-8 col-lg-3">
+                    <h5 class="mt-4">redes sociales</h5>
+                    <div class="mb-5 footer__info--rrss">
+                        <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/AgustinTrigo/Proyecto_DW" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 footer__end text-start text-lg-center">
+                    <span>Desarrollado por </span><h6>Agustin Ezequiel Trigo</h6>
                 </div>
             </div>
         </footer>
