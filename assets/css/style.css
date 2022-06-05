@@ -11809,10 +11809,9 @@ h4 {
 
 .bg__color {
   background-color: #8CDECC;
-  /*background-image:linear-gradient(to right, $colorD, $colorE);*/
 }
 
-.bg__style, .bg__style--nosotros, .bg__style--submenu, .bg__style--mediosDePago {
+.bg__style, .bg__style--nosotros, .bg__style--mediosDePago {
   background-color: white;
   margin: 50px 0px;
   padding: 0;
@@ -11820,6 +11819,7 @@ h4 {
   box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.45);
 }
 
+/* INDEX.HTML */
 .bg__style--mediosDePago {
   display: flex;
   flex-direction: column;
@@ -11849,6 +11849,10 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 @media (min-width: 992px) {
   .bg__style--submenu {
@@ -11857,6 +11861,7 @@ h4 {
   }
 }
 
+/* NOSOTROS.HTML */
 .bg__style--nosotros {
   display: flex;
   flex-direction: column;
@@ -11872,6 +11877,7 @@ h4 {
   }
 }
 
+/* PRODUCTOS.HTML */
 .bg__style--products {
   background-color: white;
   margin: 0;
@@ -11880,11 +11886,12 @@ h4 {
   box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.45);
 }
 
+/* CONTACTO.HTML */
 .bg__style--contacto {
   background-color: #8CDECC;
-  margin: 50px 0px;
+  margin: 50px 10px 100px 10px;
   padding: 0;
-  border-radius: 0;
+  border-radius: 10px;
   box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.45);
   color: white;
 }
@@ -11903,6 +11910,7 @@ h4 {
   border: none;
 }
 
+/* FOOTER */
 footer {
   position: relative;
   bottom: 0;
@@ -11955,6 +11963,10 @@ footer h6 {
   width: 16px;
   margin: 10px 10px 0px 10px;
   color: white;
+  transition: all 0.2s;
+}
+.footer__info--rrss a i:hover {
+  transform: translateY(-5px);
 }
 
 .footer__end {
@@ -12013,9 +12025,20 @@ footer h6 {
 .submenu__card {
   position: relative;
   max-height: 400px;
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.45);
+}
+@media (min-width: 992px) {
+  .submenu__card {
+    border-radius: 8px;
+  }
 }
 .submenu__card img {
   max-width: 100%;
+}
+@media (min-width: 992px) {
+  .submenu__card img {
+    border-radius: 8px;
+  }
 }
 
 .submenu__card--text {
@@ -12057,24 +12080,60 @@ footer h6 {
 }
 
 /* Tarjetas interactivas (como_ayudar.html)*/
-.card__container {
+.card__interactive {
   position: relative;
-  height: 250px;
-  margin: 50px 0px;
+  width: 300px;
+  height: 400px;
+  margin: 50px;
+  border-radius: 50px 50px 150px 150px;
+  background: white;
+  box-shadow: 20px 20px 58px #c1c1c1, -20px -20px 58px #ffffff;
 }
-.card__container:hover .img1 {
+.card__interactive:hover .img1 {
   transform: rotateY(180deg);
   opacity: 0;
 }
-.card__container:hover .img2 {
+.card__interactive:hover .img2 {
   opacity: 1;
+}
+.card__interactive:hover .card__text1 {
+  transform: translateY(150px);
+  opacity: 0;
+}
+.card__interactive:hover .card__text2 {
+  transform: translateY(40px);
+  opacity: 1;
+}
+
+.card__text1 {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 250px;
+  height: 100px;
+  transition: transform 1.3s, opacity 0.5s;
+  opacity: 1;
+}
+
+.card__text2 {
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  width: 250px;
+  height: 100px;
+  transition: transform 0.9s, opacity 0.5s;
+  opacity: 0;
 }
 
 .card__img {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 50px;
+  left: 50px;
   transition: all 0.9s;
+  width: 200px;
+  border-radius: 50px 50px 150px 150px;
+  background: white;
+  box-shadow: 20px 20px 28px #c1c1c1, -20px -20px 28px #ffffff;
 }
 .card__img img {
   max-width: 100%;
@@ -12110,6 +12169,27 @@ footer h6 {
   padding: 25px;
   color: white;
 }
+@media (min-width: 992px) {
+  .main__carrucel--text h2 {
+    left: 150px;
+  }
+}
+.main__carrucel--text img {
+  width: 100%;
+  height: 100%;
+}
+
+.first__img {
+  background-image: linear-gradient(to bottom right, #87CF8E, #B8CF87);
+}
+
+.main__carrucel--img {
+  height: 400px;
+}
+.main__carrucel--img img {
+  width: 100%;
+  object-fit: cover;
+}
 
 /*clase para el logo con CSS (h4)*/
 .main__img {
@@ -12127,6 +12207,29 @@ footer h6 {
   color: white;
   font-size: 3em;
   font-weight: 400;
+}
+
+.contacto__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 300px;
+}
+.contacto__info h3 {
+  font-family: "Koulen", cursive;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contacto__info i {
+  font-size: 3em;
+  padding: 10px;
+  color: white;
+  transition: all 0.2s;
+}
+.contacto__info i:hover {
+  transform: translateY(-5px);
 }
 
 /*# sourceMappingURL=style.css.map */

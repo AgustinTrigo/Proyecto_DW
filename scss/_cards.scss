@@ -45,9 +45,17 @@
 .submenu__card{
     position: relative;
     max-height: 400px;
+    box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.45);
+    @include Large{
+        border-radius: 8px;
+    }
     img{
         max-width: 100%;
+        @include Large{
+            border-radius: 8px;
+        }
     }
+
 }
 
 .submenu__card--text{
@@ -88,28 +96,67 @@
 
 /* Tarjetas interactivas (como_ayudar.html)*/
 
-.card__container{
+.card__interactive{
     position: relative;
-    height: 250px;
-    margin: 50px 0px;
+    width: 300px;
+    height: 400px;
+    margin: 50px;
+    border-radius: 50px 50px 150px 150px;
+    background: white;
+    box-shadow:  20px 20px 58px #c1c1c1,
+                -20px -20px 58px #ffffff;
     &:hover .img1{
         transform: rotateY(180deg);
         opacity: 0;
     }
     &:hover .img2{
         opacity: 1;
+    }    
+    &:hover .card__text1{
+        transform: translateY(150px);
+        opacity: 0;
+    }    
+    &:hover .card__text2{
+        transform: translateY(40px);
+        opacity: 1;
     }
+}
+
+.card__text1{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 250px;
+    height: 100px;
+    transition: transform 1.3s, opacity 0.5s;
+    opacity: 1;
+}
+
+.card__text2{
+    position: absolute;
+    top: -20px;
+    left: 25px;
+    width: 250px;
+    height: 100px;
+    transition: transform 0.9s, opacity 0.5s;
+    opacity: 0;
 }
 
 .card__img{
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 50px;
+    left: 50px;
     transition: all 0.9s;
+    width: 200px;
+    border-radius: 50px 50px 150px 150px;
+    background: white;
+    box-shadow:  20px 20px 28px #c1c1c1,
+                -20px -20px 28px #ffffff;
     img{
         max-width: 100%;
         max-height: 100%;
     }
+
 }
 
 .img1{
@@ -117,6 +164,7 @@
     border: solid 2px red;
     border-radius: 50%;
     overflow: hidden;
+
 }
 
 .img2{

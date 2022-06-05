@@ -1,5 +1,4 @@
 /*clase para texto en carrucel*/
-
 .carousel-item{
     height: 400px;
 }
@@ -12,8 +11,27 @@
         top: 100px;
         padding: 25px;
         color: white;
+        @include Large{
+            left: 150px;
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
     }
 
+}
+
+.first__img{
+    background-image: linear-gradient(to bottom right, #87CF8E, #B8CF87);
+}
+
+.main__carrucel--img{
+    height: 400px;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 /*clase para el logo con CSS (h4)*/
@@ -32,4 +50,27 @@
         font-size: 3em;
         font-weight: 400;
     } 
+}
+
+.contacto__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 300px;
+    h3{
+        font-family: 'Koulen', cursive;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    i{
+        font-size: 3em;
+        padding: 10px;
+        color: white;
+        transition: all 0.2s;
+        &:hover{
+            transform: translateY(-5px);
+        }
+    }
 }
