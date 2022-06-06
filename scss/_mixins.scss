@@ -1,3 +1,4 @@
+/* Mixim para trabajar con propiedades basicas */
 @mixin propiedadesGenerales ($bg-color, $margin, $padding, $bd-radius, $bd-shadow){
     background-color: $bg-color;
     margin: $margin;
@@ -7,6 +8,7 @@
     
 }
 
+/* Mixim para trabajar mejor con media querie */
 @mixin Large{
     @media (min-width: 992px){
         @content;

@@ -16,7 +16,7 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0 mb-4">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light bg__color position-sticky top-0 mb-4" id="nav-ref">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="./index.html">
                         <div class="nav__logo">
@@ -61,14 +61,6 @@
         </header>
 
         <main class="container-fluid">
-            <!--
-            <div class="row  justify-content-center mt-5 mb-5">
-                <div class="col-11">
-                    <h2>mas mar: productos sustentables</h2>
-                </div>
-            </div>
-            -->
-
             <!-- CARRUCEL -->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
@@ -77,16 +69,22 @@
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active first__img">    
+                    <div class="carousel-item active">    
                         <div class="main__carrucel--text">
                             <a href="./pages/nosotros.html"><h2>mas mar: productos sustentables</h2></a>
+                            <div class="main__carrucel--img img-sm">
+                                <img src="./assets/img/img-index-sm.jpg" alt="img-ballena-sm">
+                            </div>
+                            <div class="main__carrucel--img img-lg">
+                                <img src="./assets/img/img-ballena.jpg" alt="img-ballena-lg">
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="main__carrucel--text">
                             <a href="./pages/como_ayudar.html"><h2>descubri como podes ayudar</h2></a>
                             <div class="main__carrucel--img">
-                                <img src="./assets/img/pexels-bottella.jpg" alt="potella-plastico">
+                                <img src="./assets/img/pexels-bottella-min.jpg" alt="potella-plastico">
                             </div>
                         </div>
                     </div>
@@ -94,7 +92,7 @@
                         <div class="main__carrucel--text">
                             <a href="./pages/productos.html"><h2>explora nuestro catalogo</h2></a>
                             <div class="main__carrucel--img">
-                                <img src="./assets/img/img_reutilizar.jpg" alt="img-mar-arena">
+                                <img src="./assets/img/img_reutilizar-min.jpg" alt="img-mar-arena">
                             </div>
                         </div>
                     </div>
@@ -150,16 +148,23 @@
                     </div>
                 </div>    
             </section>
+            <!-- BOTON "IR ARRIBA" -->
+            <div class="bottom__up">
+                <a href="#nav-ref"><i class="fa-brands fa-envira"></i></a>
+            </div>
         </main>
+
         <footer class="container-fluid">
             <div class="row justify-content-lg-around w-100">
+                <!-- CONTACTO -->
                 <div class="col-8 col-lg-3">
                     <h5 class="mt-4">contactanos</h5>
                     <div class="mb-5 footer__info"> 
                         <h6><i class="fa-regular fa-envelope"></i>masmar@hotmail.com</h6>
-                        <h6><i class="fa-solid fa-location-dot"></i>Puerto Madryn, Chubut.</h6>
+                        <a href="https://www.google.com/maps/place/Puerto+Madryn,+Chubut/@-42.702325,-65.0936317,11z/data=!4m5!3m4!1s0xbe02355e87a2ead1:0x1e890d2810b44382!8m2!3d-42.7636217!4d-65.0348311" target="_blank"><h6><i class="fa-solid fa-location-dot"></i>Puerto Madryn, Chubut.</h6></a>
                     </div>
                 </div>
+                <!-- REDES SOCIALES -->
                 <div class="col-8 col-lg-3">
                     <h5 class="mt-4">redes sociales</h5>
                     <div class="mb-5 footer__info--rrss">
@@ -168,6 +173,7 @@
                         <a href="https://github.com/AgustinTrigo/Proyecto_DW" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
+                <!-- DETALLE FOOTER -->
                 <div class="col-12 footer__end text-start text-lg-center">
                     <span>Desarrollado por </span><h6>Agustin Trigo</h6>
                 </div>

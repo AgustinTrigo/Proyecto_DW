@@ -11747,6 +11747,9 @@ textarea.form-control-lg {
   box-sizing: border-box;
 }
 
+/* Mixim para trabajar con propiedades basicas */
+/* Mixim para trabajar mejor con media querie */
+/* CLASES GENERALES */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f7f7;
@@ -11772,7 +11775,7 @@ h4 {
   text-transform: uppercase;
 }
 
-/*clase para el logo con CSS (h4)*/
+/* Clase para el logo con CSS (h4) */
 .nav__logo {
   position: relative;
 }
@@ -11807,6 +11810,7 @@ h4 {
   color: #46A5A5;
 }
 
+/* Diferentes estilos para backgrounds */
 .bg__color {
   background-color: #8CDECC;
 }
@@ -11979,6 +11983,25 @@ footer h6 {
   display: inline-block;
 }
 
+/*Clase boton "ir arriba" (en todas las paginas, solo en vista mobile) */
+.bottom__up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2em;
+  z-index: 100;
+}
+.bottom__up i {
+  color: #8fd841;
+  transform: rotate(45deg);
+}
+@media (min-width: 992px) {
+  .bottom__up {
+    display: none;
+  }
+}
+
+/* Cards para productos */
 .product__card {
   display: flex;
   flex-direction: column;
@@ -12154,7 +12177,8 @@ footer h6 {
   overflow: hidden;
 }
 
-/*clase para texto en carrucel*/
+/* Clases varias */
+/* Clase para texto en carrucel*/
 .carousel-item {
   height: 400px;
 }
@@ -12179,10 +12203,6 @@ footer h6 {
   height: 100%;
 }
 
-.first__img {
-  background-image: linear-gradient(to bottom right, #87CF8E, #B8CF87);
-}
-
 .main__carrucel--img {
   height: 400px;
 }
@@ -12191,7 +12211,23 @@ footer h6 {
   object-fit: cover;
 }
 
-/*clase para el logo con CSS (h4)*/
+/* Clase para cambio de imagen en carrucel */
+@media (min-width: 992px) {
+  .img-sm {
+    display: none;
+  }
+}
+
+.img-lg {
+  display: none;
+}
+@media (min-width: 992px) {
+  .img-lg {
+    display: block;
+  }
+}
+
+/*clase para el logo con CSS (h4) (nosotros.html)*/
 .main__img {
   position: relative;
 }
@@ -12209,6 +12245,7 @@ footer h6 {
   font-weight: 400;
 }
 
+/* Clase informacion redes sociales (contacto.html) */
 .contacto__info {
   display: flex;
   flex-direction: column;
