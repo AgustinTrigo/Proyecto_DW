@@ -10,7 +10,7 @@ Que una persona recuerde algo que vio en el sitio y le haya parecido interesante
 
 
 ## Deploy ##
-Podés ver el sitio ingresando [aquí](https://aguslu0.github.io/RosTourist/)
+Podés ver el sitio ingresando [aquí](https://agustintrigo.github.io/Proyecto_DW/)
 
 ## Construido con ##
 * HTML
